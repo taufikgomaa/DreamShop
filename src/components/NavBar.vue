@@ -1,14 +1,14 @@
 <template>
  <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
   <div class="container">
-    <a href="#" class="navbar-brand">DreamShop</a>
+    <router-link to="/" class="navbar-brand">DreamShop</router-link>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon lead"></span></button>
     <div id="navmenu" class="collapse navbar-collapse">
       <ul class="navbar-nav">
-        <li class="nav-item text-dark"><router-link to="/" class="nav-link">Home</router-link></li>
-        <li class="nav-item text-dark"><router-link to="/about" class="nav-link">Products</router-link></li>
-        <li class="nav-item text-dark"><router-link to="/about" class="nav-link">About</router-link></li>
+        <li class="nav-item"><router-link to="/" class="nav-link text-warning">Home</router-link></li>
+        <li class="nav-item"><router-link to="/about" class="nav-link text-warning">Products</router-link></li>
+        <li class="nav-item"><router-link to="/about" class="nav-link text-warning">About</router-link></li>
       </ul>
     </div>
   </div>
@@ -22,7 +22,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 
-a.navbar-brand {
+.navbar-brand, .nav-link {
     font-family: 'Lato', sans-serif;
 }
 
