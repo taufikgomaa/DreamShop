@@ -1,27 +1,18 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Products</a>
-          <a class="nav-link" href="#">About Us</a>
-        </div>
-      </div>
+ <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+  <div class="container">
+    <a href="#" class="navbar-brand">DreamShop</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon lead"></span></button>
+    <div id="navmenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item text-dark"><router-link to="/" class="nav-link">Home</router-link></li>
+        <li class="nav-item text-dark"><router-link to="/about" class="nav-link">Products</router-link></li>
+        <li class="nav-item text-dark"><router-link to="/about" class="nav-link">About</router-link></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+ </nav>
 </template>
 
 
@@ -33,5 +24,9 @@
 
 a.navbar-brand {
     font-family: 'Lato', sans-serif;
+}
+
+.navbar-nav {
+  margin-left: 30vw;
 }
 </style>
