@@ -5,6 +5,20 @@
     </p>
     <p class="h3 shop-header-text shadow-lg">All Your Needs Is Here</p>
   </section>
+
+  <section class="container">
+    <div class="row text-center">
+      <div class="col">
+        lol
+      </div>
+      <div class="col">
+        lol
+      </div>
+      <div class="col">
+        lol
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

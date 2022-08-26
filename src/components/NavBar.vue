@@ -7,7 +7,7 @@
     <div id="navmenu" class="collapse navbar-collapse">
       <ul class="navbar-nav">
         <li class="nav-item"><router-link to="/" class="nav-link text-warning">Home</router-link></li>
-        <li class="nav-item"><router-link to="/about" class="nav-link text-warning">Products</router-link></li>
+        <li class="nav-item"><router-link to="/products" class="nav-link text-warning">Products</router-link></li>
         <li class="nav-item"><router-link to="/about" class="nav-link text-warning">About</router-link></li>
       </ul>
     </div>
