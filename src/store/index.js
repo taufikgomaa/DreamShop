@@ -2,7 +2,14 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    products: []
+    products: [],
+    itemPreview: {
+      id: "",
+      title: "",
+      description: "",
+      price: "",
+      image: ""
+    }
   },
   getters: {
   },
