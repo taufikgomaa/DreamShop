@@ -12,7 +12,7 @@
                         <p class="lead">{{$store.state.itemPreview.description}}</p>
                         <div class="d-flex">
                             <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button" @click="$store.commit('addToCart', item)">
                                 <i class="bi-cart-fill me-1"></i>
                                 Add to cart
                             </button>
@@ -26,6 +26,15 @@
 <script>
 export default {
     name: "ItemView",
+    data() {
+        return {
+            item: {}
+        }
+    },
+    async created() {
+        const res = await fetch(`http://localhost:3000/products/${this.$store.state.itemPreview.id}`);
+        this.item = await res.json();
+    }
 }
 </script>
 

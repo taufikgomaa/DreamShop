@@ -9,7 +9,7 @@
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add To Cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" @click.prevent="$store.commit('addToCart', product)">Add To Cart</a></div>
                                 <div class="text-center"><router-link :to="`/item/${product.id}`" class="btn btn-outline-dark mt-auto" @click="loadPreview(product)">Info</router-link></div>
                             </div>
                         </div>
