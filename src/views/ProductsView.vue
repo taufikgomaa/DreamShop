@@ -24,7 +24,6 @@ export default {
   name: "ProductsView",
   components: {
     ProductCard,
-    ProductCard,
   },
   async created() {
     const res = await fetch("http://localhost:3000/products");
