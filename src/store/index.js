@@ -32,10 +32,19 @@ export default createStore({
       }
     },
     increaseQuantity(state, _Item) {
-      _Item.quantity++;
+      if (_Item.quantity < 4) {
+        _Item.inStock--;
+        _Item.quantity++;
+      }
     },
     decreaseQuantity(state, _Item) {
-      _Item.quantity--;
+      if (_Item.quantity > 1) {
+        _Item.inStock++;
+        _Item.quantity--;
+      } else if (_Item.quantity == 0) {
+        const index = this.cart.indexOf(_Item);
+        this.cart.splice(index, 1);
+      }
     }
   },
   actions: {

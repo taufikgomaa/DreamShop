@@ -31,10 +31,27 @@
               </div>
               <div class="mb-3">
                 <input
+                  type="email"
+                  class="form-control"
+                  id="E-mail"
+                  aria-describedby="emailHelp"
+                  placeholder="E-mail"
+                />
+              </div>
+              <div class="mb-3">
+                <input
                   type="password"
                   class="form-control"
                   id="password"
                   placeholder="password"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="conpassword"
+                  placeholder="Confirm Password"
                 />
               </div>
               <div class="text-center">
