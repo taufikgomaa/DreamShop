@@ -32,7 +32,7 @@
                     </figure>
                   </td>
                   <td class="text-right d-none d-md-block">
-                    <span class="btn btn-success" @click="$store.commit('increaseQuantity', cartItem)">+</span> {{cartItem.quantity}} <span
+                    <span class="btn btn-success" @click="$store.commit('increaseQuantity', cartItem)" :disabled="cartItem.quantity == 4">+</span> {{cartItem.quantity}} <span
                             class="btn btn-danger" @click="$store.commit('decreaseQuantity', cartItem)">-</span>
                   </td>
                   <td>
