@@ -38,13 +38,17 @@ export default createStore({
       }
     },
     decreaseQuantity(state, _Item) {
-      if (_Item.quantity > 1) {
+      if (_Item.quantity >= 1) {
         _Item.inStock++;
         _Item.quantity--;
       } else if (_Item.quantity == 0) {
-        const index = this.cart.indexOf(_Item);
-        this.cart.splice(index, 1);
+        const index = state.cart.indexOf(_Item);
+        state.cart.splice(index, 1);
       }
+    },
+    removeItem(state, _Item) {
+      const index = state.cart.indexOf(_Item);
+      state.cart.splice(index, 1);
     }
   },
   actions: {

@@ -41,7 +41,7 @@
                     </div>
                   </td>
                   <td class="text-right d-none d-md-block">
-                    <a href="" class="btn btn-light"> Remove</a>
+                    <a href="" class="btn btn-light" @click.prevent="$store.commit('removeItem', cartItem.product)"> Remove</a>
                   </td>
                 </tr>
               </tbody>
